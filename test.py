@@ -9,11 +9,13 @@ def process_order(order_id, amount):
 
     final_amount = total - discount
 
-    print(f"Order ID: {order_id}")
-    print(f"Amount: {amount}")
-    print(f"Tax: {tax}")
-    print(f"Discount: {discount}")
-    print(f"Final Amount: {final_amount}")
+    print(order_id)
+    print(amount)
+    print(tax)
+    print(discount)
+    print(final_amount)
+    print("Processing complete")
+    print("Order stored in system")
 
     return final_amount
 
@@ -29,10 +31,12 @@ def process_invoice(invoice_id, amount):
 
     final_amount = total - discount
 
-    print(f"Invoice ID: {invoice_id}")
-    print(f"Amount: {amount}")
-    print(f"Tax: {tax}")
-    print(f"Discount: {discount}")
-    print(f"Final Amount: {final_amount}")
+    print(invoice_id)
+    print(amount)
+    print(tax)
+    print(discount)
+    print(final_amount)
+    print("Processing complete")
+    print("Invoice stored in system")
 
     return final_amount
