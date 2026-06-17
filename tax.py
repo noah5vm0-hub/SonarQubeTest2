@@ -41,7 +41,7 @@ def process_order2(order_id, amount):
 
     return final_amount
     
-    def process_order3(order_id, amount):
+ def process_order3(order_id, amount):
     tax = amount * 0.05
     total = amount + tax
 
@@ -62,7 +62,7 @@ def process_order2(order_id, amount):
 
     return final_amount
     
-    def process_order4(order_id, amount):
+def process_order4(order_id, amount):
     tax = amount * 0.05
     total = amount + tax
 
@@ -83,7 +83,7 @@ def process_order2(order_id, amount):
 
     return final_amount
 
-    def process_order5(order_id, amount):
+ def process_order5(order_id, amount):
     tax = amount * 0.05
     total = amount + tax
 
