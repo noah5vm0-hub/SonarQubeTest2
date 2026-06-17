@@ -1,42 +1,30 @@
-def process_cpu_data(metrics_list):
-    """處理 CPU 的監控數據"""
-    if not metrics_list:
-        return 0.0
-    
-    filtered_data = []
-    for data in metrics_list:
-        # 篩選掉小於 0 或大於 100 的異常值
-        if data >= 0 and data <= 100:
-            filtered_data.append(data)
-            
-    if not filtered_data:
-        return 0.0
-        
-    total_score = sum(filtered_data)
-    data_count = len(filtered_data)
-    final_average = total_score / data_count
-    
-    print(f"[LOG] CPU processing complete. Average: {final_average}")
-    return round(final_average, 2)
+def calculate_student_grade(score):
+    if score >= 90:
+        result = "A"
+    elif score >= 80:
+        result = "B"
+    elif score >= 70:
+        result = "C"
+    elif score >= 60:
+        result = "D"
+    else:
+        result = "F"
+
+    print(f"Student grade: {result}")
+    return result
 
 
-def process_memory_data(metrics_list):
-    """處理記憶體的監控數據"""
-    if not metrics_list:
-        return 0.0
-    
-    filtered_data = []
-    for data in metrics_list:
-        # 篩選掉小於 0 或大於 100 的異常值
-        if data >= 0 and data <= 100:
-            filtered_data.append(data)
-            
-    if not filtered_data:
-        return 0.0
-        
-    total_score = sum(filtered_data)
-    data_count = len(filtered_data)
-    final_average = total_score / data_count
-    
-    print(f"[LOG] Memory processing complete. Average: {final_average}")
-    return round(final_average, 2)
+def calculate_employee_level(score):
+    if score >= 90:
+        result = "Senior"
+    elif score >= 80:
+        result = "Intermediate"
+    elif score >= 70:
+        result = "Junior"
+    elif score >= 60:
+        result = "Trainee"
+    else:
+        result = "Probation"
+
+    print(f"Employee level: {result}")
+    return result
